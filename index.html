@@ -27,7 +27,85 @@
       }
     </style>
   </head>
-  <body>
+  <body class="font-poppins">
+    <!-- Navbar -->
+    <div class="navbar bg-base-100 max-w-7xl mx-auto py-7">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <li><a>Item 1</a></li>
+            <li><a>Item 1</a></li>
+            <li><a>Item 1</a></li>
+            <li><a>Item 1</a></li>
+          </ul>
+        </div>
+        <a class="text-3xl font-bold">P-Ticket</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="flex gap-10 px-1">
+          <li><a>Home</a></li>
+          <li><a>About</a></li>
+          <li><a>Destination</a></li>
+          <li><a>Search</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a
+          class="btn text-xl text-[#1DD100] bg-[#dfffda] border border-[#1DD100] hover:bg-[#ebffe8]"
+          >Bus <img src="images/bus-icon.png" alt="" srcset=""
+        /></a>
+      </div>
+    </div>
+
+    <!-- Hero section -->
+    <div class="max-w-7xl mx-auto">
+      <div
+        class="min-h-[550px] bg-no-repeat bg-cover bg-center rounded-[33px]"
+        style="background-image: url(images/banner.png)"
+      >
+        <div class="hero-overlay"></div>
+        <div class="hero-content text-center min-h-[550px]">
+          <div class="max-w-3xl">
+            <h1 class="mb-5 text-6xl font-bold text-white">
+              End-to-End Travel with <br />
+              <span class="text-[#1DD100]">P Paribahan</span>
+            </h1>
+            <p class="mb-5 text-white">
+              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
+              et a id nisi.
+            </p>
+            <button
+              class="btn border-none bg-[#1DD100] hover:bg-[#81ff6e] text-black"
+            >
+              Buy Tickets
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Best Offer Section -->
+    
     <script src="script.js"></script>
   </body>
 </html>
