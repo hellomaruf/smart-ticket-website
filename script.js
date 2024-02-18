@@ -22,6 +22,7 @@ for (const seat of allSeat) {
     let seatSpan = document.getElementById("seat-span");
     seatSpan.innerText = incrementSeatNum;
     incrementSeatNum++;
+    console.log(seatSpan.innerText);
 
     //   Decrement seat left number**********
     let seatsLeft = document.getElementById("seats-left");
@@ -39,7 +40,6 @@ for (const seat of allSeat) {
     let economoyClass = "Economoy";
     let p1 = document.createElement("p");
     p1.innerText = economoyClass;
-    console.log(p1);
     let classDiv = document.getElementById("class");
     classDiv.appendChild(p1);
 
@@ -47,13 +47,11 @@ for (const seat of allSeat) {
     let ticketPrice = 550;
     let p2 = document.createElement("p");
     p2.innerText = ticketPrice;
-    console.log(p2);
     let priceDiv = document.getElementById("price");
     priceDiv.appendChild(p2);
 
     //   add totol Price*********
     sumTicketPrice += ticketPrice;
-    console.log(sumTicketPrice);
     let totalPrice = document.getElementById("total-price");
     totalPrice.innerText = sumTicketPrice;
 
@@ -73,6 +71,34 @@ for (const seat of allSeat) {
           alert("Please Enter your Phone Number");
         }
       });
+
+    // get discount by enter coupon code
+    document.getElementById("apply-btn").addEventListener("click", function () {
+      let couponInput = document.getElementById("coupon-input");
+      let couponInputValue = couponInput.value;
+      let couponCode = couponInputValue.split(" ").join("").toUpperCase();
+
+      let seatNum = [];
+      seatNum.push(seatSpan.innerText);
+      console.log(seatNum);
+      if (seatSpan.innerText >= 4) {
+        if (couponCode == "NEW15") {
+          // console.log("you got 15% discount");
+          let totalPriceDiv = document.getElementById("total-price-div");
+          let totalPriceAmount = document.getElementById("total-price-amount");
+          console.log(totalPriceDiv);
+          console.log(totalPriceAmount);
+          let p = document.createElement("p");
+          let discount = "Discount";
+          p.innerText = discount;
+          totalPrice.appendChild(p);
+        } else {
+          console.log("no discount");
+        }
+      } else {
+        console.log("Please Buy four seats");
+      }
+    });
   });
 }
 
@@ -97,8 +123,6 @@ function disableRemainingButtons() {
 function scrollToSection(sectionId) {
   var section = document.getElementById(sectionId);
   if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
+    section.scrollIntoView({ behavior: "smooth" });
   }
 }
-
-
