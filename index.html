@@ -90,11 +90,12 @@
               <span class="text-[#1DD100]">P Paribahan</span>
             </h1>
             <p class="mb-5 text-white">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
+              You can't get there by bus, only by hard work, risk, and not quite
+              knowing what you're doing. What you'll discover will be wonderful.
+              What you'll discover will be yourself.
             </p>
             <button
+              onclick="scrollToSection('total-ticket-calculation')"
               id="buy-ticket-btn"
               class="btn border-none bg-[#1DD100] hover:bg-[#81ff6e] text-black"
             >
@@ -121,7 +122,12 @@
               use by January 2024
             </p>
           </div>
-          <img class="" src="images/cupon-devider.png" alt="" srcset="" />
+          <img
+            class="hidden lg:block"
+            src="images/cupon-devider.png"
+            alt=""
+            srcset=""
+          />
           <div class="p-8 md:p-12">
             <h3 class="text-3xl md:text-4xl font-mono font-bold">NEW15</h3>
             <p class="text-gray-700 py-1">Coupon Code</p>
@@ -137,7 +143,12 @@
               use by January 2024
             </p>
           </div>
-          <img src="images/cupon-devider.png" alt="" srcset="" />
+          <img
+            class="hidden lg:block"
+            src="images/cupon-devider.png"
+            alt=""
+            srcset=""
+          />
           <div class="p-8 md:p-12">
             <h3 class="text-3xl md:text-4xl font-mono font-bold">Couple 20</h3>
             <p class="text-gray-700 py-1">Coupon Code</p>
@@ -159,10 +170,10 @@
     >
       <div class="text-center mt-16 md:mt-24 px-4 mb-9">
         <h1 class="text-3xl md:text-4xl font-semibold pb-4">P.H Paribahan</h1>
-        <p>
-          Yes, you can run unit tests and view the results directly within the
-          app. The integrated <br />
-          testing features allow for a streamlined .
+        <p class="max-w-4xl mx-auto">
+          It is our duty to get you to your destination. Welcome to our PH
+          Transport. You will get some amazing discounts from us. Enjoy your
+          trip
         </p>
       </div>
 
@@ -222,6 +233,36 @@
 
       <!-- **************************************** -->
 
+      <!-- *******************modal******************* -->
+      <!-- Open the modal using ID.showModal() method -->
+      <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+        <div
+          class="modal-box text-center flex flex-col items-center justify-center"
+        >
+          <img src="images/success.png" class="" alt="" srcset="" />
+          <h3 class="font-bold text-lg text-[#27AE60] pt-6 uppercase">
+            Success
+          </h3>
+          <p class="py-4 font-semibold">
+            Thank you for Booking Our Bus Seats. We are working hard to find the
+            best service and deals for you.
+          </p>
+          <p class="text-gray-500">
+            Shortly you will find a confirmation in your email.
+          </p>
+          <div class="modal-action">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button
+                class="btn rounded-full text-white bg-[#27AE60] hover:bg-[#338d59]"
+              >
+                Continue
+              </button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+
       <div
         class="flex flex-col lg:flex-row gap-8 justify-between bg-white max-w-7xl mx-auto mt-7 rounded-3xl p-6"
       >
@@ -248,7 +289,10 @@
             />
           </div>
           <div class="flex gap-1 my-1 w-full">
-            <kbd class="text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none">A</kbd>
+            <kbd
+              class="text-xl hidden lg:block px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              >A</kbd
+            >
             <button
               class="kbd font-normal w-24 text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
             >
@@ -271,7 +315,10 @@
             </button>
           </div>
           <div class="flex gap-1 my-1 w-full">
-            <kbd class="text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none">B</kbd>
+            <kbd
+              class="text-xl hidden lg:block px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              >B</kbd
+            >
             <button
               class="kbd font-normal w-24 text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
             >
@@ -294,7 +341,10 @@
             </button>
           </div>
           <div class="flex gap-1 my-1 w-full">
-            <kbd class="text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none">C</kbd>
+            <kbd
+              class="text-xl hidden lg:block px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              >C</kbd
+            >
             <button
               class="kbd text-xl w-24 px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
             >
@@ -317,7 +367,10 @@
             </button>
           </div>
           <div class="flex gap-1 my-1 w-full">
-            <kbd class="text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none">D</kbd>
+            <kbd
+              class="text-xl hidden lg:block px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              >D</kbd
+            >
             <button
               class="kbd w-24 font-normal text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
             >
@@ -340,7 +393,10 @@
             </button>
           </div>
           <div class="flex gap-1 my-1 w-full">
-            <kbd class="text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none">E</kbd>
+            <kbd
+              class="text-xl hidden lg:block px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              >E</kbd
+            >
             <button
               class="kbd w-24 font-normal text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
             >
@@ -363,7 +419,10 @@
             </button>
           </div>
           <div class="flex gap-1 my-1 w-full">
-            <kbd class="text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none">F</kbd>
+            <kbd
+              class="text-xl hidden lg:block px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              >F</kbd
+            >
             <button
               class="kbd w-24 font-normal text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
             >
@@ -386,7 +445,10 @@
             </button>
           </div>
           <div class="flex gap-1 my-1 w-full">
-            <kbd class="text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none">G</kbd>
+            <kbd
+              class="text-xl hidden lg:block px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              >G</kbd
+            >
             <button
               class="kbd w-24 text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
             >
@@ -409,7 +471,10 @@
             </button>
           </div>
           <div class="flex gap-1 my-1 w-full">
-            <kbd class="text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none">H</kbd>
+            <kbd
+              class="text-xl hidden lg:block px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              >H</kbd
+            >
             <button
               class="kbd w-24 text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
             >
@@ -432,7 +497,10 @@
             </button>
           </div>
           <div class="flex gap-1 my-1 w-full">
-            <kbd class="text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none">I</kbd>
+            <kbd
+              class="text-xl hidden lg:block px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              >I</kbd
+            >
             <button
               class="kbd w-24 text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
             >
@@ -455,7 +523,10 @@
             </button>
           </div>
           <div class="flex gap-1 my-1 w-full">
-            <kbd class="text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none">J</kbd>
+            <kbd
+              class="text-xl hidden lg:block px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              >J</kbd
+            >
             <button
               class="kbd w-24 text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
             >
@@ -557,6 +628,7 @@
             </div>
             <div class="">
               <button
+                onclick="my_modal_5.showModal()"
                 disabled
                 id="next-btn"
                 class="w-full disabled:opacity-50 text-white py-5 text-xl rounded-xl bg-[#1DD100]"

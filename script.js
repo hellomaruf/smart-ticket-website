@@ -1,13 +1,18 @@
 let incrementSeatNum = 1;
 let decrementSeatLeftNum = 39;
 let sumTicketPrice = 0;
+let click = 0;
 // Get all seats******
 let allSeat = document.querySelectorAll(".kbd");
 for (const seat of allSeat) {
   seat.addEventListener("click", function (event) {
+    //  click only 4 buttons, after clicking 4 buttons other buttons will be disabled ***
+    handleButtonClick(seat);
     //   add color when clicking the button********
     seat.classList.add("bg-[#1DD100]");
     seat.classList.add("text-white");
+
+    //   when clicking the button it will be disabled**********
     event.target.disabled = true;
     if ((event.target.disabled = true)) {
       seat.style.background = "#1DD100";
@@ -71,8 +76,29 @@ for (const seat of allSeat) {
   });
 }
 
-document
-  .getElementById("buy-ticket-btn")
-  .addEventListener("click", function () {
-    document.getElementById("total-ticket-calculation");
-  });
+//  click only 4 buttons, after clicking 4 buttons other buttons will be disabled ***
+function handleButtonClick(seats) {
+  click++;
+  seats.disabled = true;
+  if (click >= 4) {
+    disableRemainingButtons();
+  }
+}
+
+function disableRemainingButtons() {
+  for (let seat of allSeat) {
+    if (!seat.disabled) {
+      seat.disabled = true;
+    }
+  }
+}
+
+// clicking by Buy ticket button it scroll to P.H Paribahan section**********
+function scrollToSection(sectionId) {
+  var section = document.getElementById(sectionId);
+  if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
+
