@@ -71,7 +71,7 @@ for (const seat of allSeat) {
           alert("Please Enter your Phone Number");
         }
       });
-    
+
     // remove disable attribute form apply btn and coupon input field********
     let applyBtn = document.getElementById("apply-btn");
     let couponInput = document.getElementById("coupon-input");
