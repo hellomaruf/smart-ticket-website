@@ -22,7 +22,6 @@ for (const seat of allSeat) {
     let seatSpan = document.getElementById("seat-span");
     seatSpan.innerText = incrementSeatNum;
     incrementSeatNum++;
-    // console.log(seatSpan.innerText);
 
     //   Decrement seat left number**********
     let seatsLeft = document.getElementById("seats-left");
@@ -87,7 +86,6 @@ document.getElementById("apply-btn").addEventListener("click", function () {
   let couponInput = document.getElementById("coupon-input");
   let couponInputValue = couponInput.value;
   let couponCode = couponInputValue;
-  console.log(incrementSeatNum);
   if (incrementSeatNum === 5) {
     if (couponCode == "NEW15") {
       let totalPriceDiv = document.getElementById("total-price-div");
@@ -99,7 +97,6 @@ document.getElementById("apply-btn").addEventListener("click", function () {
       p1.innerText = discountText;
       let discount15 = (sumTicketPrice * 15) / 100;
       let afterDiscountPrice = sumTicketPrice - discount15;
-      console.log(afterDiscountPrice);
       p.innerText = "BDT " + discount15;
       totalPriceAmount.appendChild(p);
       totalPriceDiv.appendChild(p1);
@@ -112,6 +109,10 @@ document.getElementById("apply-btn").addEventListener("click", function () {
 
       let grandTotal = document.getElementById("grand-total");
       grandTotal.innerText = afterDiscountPrice;
+
+      // congratulation msg*******
+      let congratulationMsg = document.getElementById("congratulation-msg");
+      congratulationMsg.classList.remove("hidden");
     } else if (couponCode == "Couple 20") {
       let totalPriceDiv = document.getElementById("total-price-div");
       let totalPriceAmount = document.getElementById("total-price-amount");
@@ -122,7 +123,6 @@ document.getElementById("apply-btn").addEventListener("click", function () {
       p1.innerText = discountText;
       let discount20 = (sumTicketPrice * 20) / 100;
       let afterDiscountPrice = sumTicketPrice - discount20;
-      console.log(afterDiscountPrice);
       p.innerText = "BDT " + discount20;
       totalPriceAmount.appendChild(p);
       totalPriceDiv.appendChild(p1);
@@ -135,6 +135,10 @@ document.getElementById("apply-btn").addEventListener("click", function () {
       applyBtn.classList.add("hidden");
       let couponInput = document.getElementById("coupon-input");
       couponInput.classList.add("hidden");
+
+      // congratulation msg*******
+      let congratulationMsg = document.getElementById("congratulation-msg");
+      congratulationMsg.classList.remove("hidden");
     } else {
       alert("Invalid Coupon");
     }
