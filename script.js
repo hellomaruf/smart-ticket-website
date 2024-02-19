@@ -71,10 +71,18 @@ for (const seat of allSeat) {
           alert("Please Enter your Phone Number");
         }
       });
+    
+    // remove disable attribute form apply btn and coupon input field********
+    let applyBtn = document.getElementById("apply-btn");
+    let couponInput = document.getElementById("coupon-input");
+    if (incrementSeatNum === 5) {
+      couponInput.removeAttribute("disabled");
+      applyBtn.removeAttribute("disabled");
+    }
   });
 }
 
-// get discount by enter coupon code
+// get discount by enter coupon code*********
 document.getElementById("apply-btn").addEventListener("click", function () {
   let couponInput = document.getElementById("coupon-input");
   let couponInputValue = couponInput.value;
