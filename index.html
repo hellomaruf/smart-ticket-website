@@ -77,7 +77,7 @@
     </div>
 
     <!-- Hero section -->
-    <div class="max-w-7xl mx-auto">
+    <div class="max-w-7xl mx-auto z-0">
       <div
         class="min-h-[550px] bg-no-repeat bg-cover bg-center mx-4 md:mx-0 rounded-[25px] md:rounded-[32px]"
         style="background-image: url(images/banner.png)"
@@ -106,13 +106,50 @@
       </div>
     </div>
 
+    <!-- Record card section -->
+    <div class="max-w-7xl mx-auto relative z-10 -top-10 md:-top-20">
+      <div class="flex flex-col md:flex-row gap-5 justify-center items-center">
+        <div
+          class="py-10 bg-white flex px-10 gap-3 rounded-3xl border-b-4 border-[#1DD100] items-center"
+        >
+          <div class=""><img src="images/people.png" alt="" srcset="" /></div>
+          <div class="">
+            <h2 class="text-black font-bold text-4xl">500K+</h2>
+            <p class="text-gray-500">Registered users</p>
+          </div>
+        </div>
+        <div
+          class="py-10 flex gap-3 px-10 bg-white rounded-3xl border-b-4 border-[#1DD100] items-center"
+        >
+          <div class="">
+            <img src="images/ticket-cupon.png" alt="" srcset="" />
+          </div>
+          <div class="">
+            <h2 class="text-black font-bold text-4xl">1.7 lacks</h2>
+            <p class="text-gray-500">Tickets sold</p>
+          </div>
+        </div>
+        <div
+          class="py-10 px-10 gap-3 bg-white rounded-3xl border-b-4 border-[#1DD100] flex items-center"
+        >
+          <div class=""><img src="images/stoppage.png" alt="" srcset="" /></div>
+          <div class="">
+            <h2 class="text-black font-bold text-4xl">80K+</h2>
+            <p class="text-gray-500">Rental partners</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Best Offer Section -->
-    <div class="max-w-7xl mx-auto mt-16 md:mt-24">
+    <div class="max-w-7xl mx-auto mt-8 md:mt-16">
       <h1 class="text-3xl md:text-4xl font-semibold text-center pb-8 md:pb-11">
         Best offers for you
       </h1>
       <div class="flex justify-center flex-col md:flex-row mx-4 md:mx-0 gap-6">
-        <div class="bg-[#FFBF0F] rounded-3xl flex items-center">
+        <div
+          class="bg-[#FFBF0F] rounded-3xl flex flex-col md:flex-row items-center"
+        >
           <div class="p-8 md:p-12">
             <h3 class="text-3xl md:text-4xl font-bold">15% OFF</h3>
             <p class="text-base md:text-xl font-medium py-1">
@@ -133,7 +170,9 @@
             <p class="text-gray-700 py-1">Coupon Code</p>
           </div>
         </div>
-        <div class="bg-[#F78C9C] flex items-center rounded-3xl">
+        <div
+          class="bg-[#F78C9C] flex flex-col md:flex-row items-center rounded-3xl"
+        >
           <div class="p-8 md:p-12">
             <h3 class="text-3xl md:text-4xl font-bold">20% OFF</h3>
             <p class="text-base md:text-xl font-medium py-1">
@@ -158,7 +197,7 @@
       <div class="text-center py-12">
         <a
           class="btn text-xl text-[#1DD100] border rounded-xl border-[#1DD100] hover:bg-[#ebffe8]"
-          >See More<img src="" alt="" srcset=""
+          >See All Offers<img src="" alt="" srcset=""
         /></a>
       </div>
     </div>
@@ -185,15 +224,23 @@
             class="flex flex-col md:flex-row justify-between gap-4 items-start md:items-center pb-4"
           >
             <div class="flex gap-4">
-              <img src="images/bus-logo.png" alt="" srcset="" />
               <div class="">
-                <h3 class="text-2xl font-medium">Greenline Paribahan</h3>
-                <p class="text-gray-600">Coach-009-WEB ! AC_Business</p>
+                <img src="images/bus-logo.png" alt="" srcset="" />
+              </div>
+              <div class="">
+                <h3 class="text-xl md:text-2xl font-medium">
+                  Greenline Paribahan
+                </h3>
+                <p class="text-gray-600 text-base">
+                  Coach-009-WEB ! AC_Business
+                </p>
               </div>
             </div>
-            <div class="flex gap-2 p-2 bg-green-100">
+            <div class="flex items-center gap-2 p-2 bg-green-50 rounded-lg">
               <img src="images/seat-green.png" alt="" srcset="" />
-              <p><span id="seats-left">40</span> Seats left</p>
+              <p class="text-[#1DD100] font-semibold">
+                <span id="seats-left">40</span> Seats left
+              </p>
             </div>
           </div>
           <div class="bg-[#F7F8F8] rounded-3xl p-8">
@@ -290,260 +337,260 @@
           </div>
           <div class="flex gap-1 my-1 w-full">
             <kbd
-              class="text-xl hidden lg:block px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              class="text-base md:text-xl hidden lg:block px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
               >A</kbd
             >
             <button
-              class="kbd font-normal w-24 text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              class="kbd font-normal w-24 text-base md:text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
             >
               A1
             </button>
             <button
-              class="kbd text w-24 font-normal px-9 py-3 mx-1 sm:mx-5 my-2 mr-6 border-none"
+              class="kbd font-normal w-24 text-base md:text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
             >
               A2
             </button>
             <button
-              class="kbd font-normal w-24 text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              class="kbd font-normal w-24 text-base md:text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
             >
               A3
             </button>
             <button
-              class="kbd font-normal w-24 text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              class="kbd font-normal w-24 text-base md:text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
             >
               A4
             </button>
           </div>
           <div class="flex gap-1 my-1 w-full">
             <kbd
-              class="text-xl hidden lg:block px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              class="text-base md:text-xl hidden lg:block px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
               >B</kbd
             >
             <button
-              class="kbd font-normal w-24 text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              class="kbd font-normal w-24 text-base md:text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
             >
               B1
             </button>
             <button
-              class="kbd font-normal w-24 text-xl px-9 py-3 mx-1 sm:mx-5 my-2 mr-6 border-none"
+              class="kbd font-normal w-24 text-base md:text-xl px-9 py-3 mx-1 sm:mx-5 my-2 mr-6 border-none"
             >
               B2
             </button>
             <button
-              class="kbd font-normal w-24 text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              class="kbd font-normal w-24 text-base md:text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
             >
               B3
             </button>
             <button
-              class="kbd font-normal w-24 text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              class="kbd font-normal w-24 text-base md:text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
             >
               B4
             </button>
           </div>
           <div class="flex gap-1 my-1 w-full">
             <kbd
-              class="text-xl hidden lg:block px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              class="text-base md:text-xl hidden lg:block px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
               >C</kbd
             >
             <button
-              class="kbd text-xl w-24 px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              class="kbd text-base md:text-xl w-24 px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
             >
               C1
             </button>
             <button
-              class="kbd text-xl w-24 px-9 py-3 mx-1 sm:mx-5 my-2 mr-6 border-none"
+              class="kbd text-base md:text-xl w-24 px-9 py-3 mx-1 sm:mx-5 my-2 mr-6 border-none"
             >
               C2
             </button>
             <button
-              class="kbd w-24 text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              class="kbd w-24 text-base md:text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
             >
               C3
             </button>
             <button
-              class="kbd w-24 text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              class="kbd w-24 text-base md:text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
             >
               C4
             </button>
           </div>
           <div class="flex gap-1 my-1 w-full">
             <kbd
-              class="text-xl hidden lg:block px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              class="text-base md:text-xl hidden lg:block px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
               >D</kbd
             >
             <button
-              class="kbd w-24 font-normal text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              class="kbd w-24 font-normal text-base md:text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
             >
               D1
             </button>
             <button
-              class="kbd w-24 font-normal text-xl px-9 py-3 mx-1 sm:mx-5 my-2 mr-6 border-none"
+              class="kbd w-24 font-normal text-base md:text-xl px-9 py-3 mx-1 sm:mx-5 my-2 mr-6 border-none"
             >
               D2
             </button>
             <button
-              class="kbd w-24 font-normal text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              class="kbd w-24 font-normal text-base md:text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
             >
               D3
             </button>
             <button
-              class="kbd w-24 font-normal text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              class="kbd w-24 font-normal text-base md:text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
             >
               D4
             </button>
           </div>
           <div class="flex gap-1 my-1 w-full">
             <kbd
-              class="text-xl hidden lg:block px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              class="text-base md:text-xl hidden lg:block px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
               >E</kbd
             >
             <button
-              class="kbd w-24 font-normal text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              class="kbd w-24 font-normal text-base md:text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
             >
               E1
             </button>
             <button
-              class="kbd w-24 font-normal text-xl px-9 py-3 mx-1 sm:mx-5 my-2 mr-6 border-none"
+              class="kbd w-24 font-normal text-base md:text-xl px-9 py-3 mx-1 sm:mx-5 my-2 mr-6 border-none"
             >
               E2
             </button>
             <button
-              class="kbd w-24 font-normal text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              class="kbd w-24 font-normal text-base md:text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
             >
               E3
             </button>
             <button
-              class="kbd w-24 font-normal text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              class="kbd w-24 font-normal text-base md:text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
             >
               E4
             </button>
           </div>
           <div class="flex gap-1 my-1 w-full">
             <kbd
-              class="text-xl hidden lg:block px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              class="text-base md:text-xl hidden lg:block px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
               >F</kbd
             >
             <button
-              class="kbd w-24 font-normal text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              class="kbd w-24 font-normal text-base md:text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
             >
               F1
             </button>
             <button
-              class="kbd w-24 text-xl px-9 py-3 mx-1 sm:mx-5 my-2 mr-6 border-none"
+              class="kbd w-24 text-base md:text-xl px-9 py-3 mx-1 sm:mx-5 my-2 mr-6 border-none"
             >
               F2
             </button>
             <button
-              class="kbd w-24 text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              class="kbd w-24 text-base md:text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
             >
               F3
             </button>
             <button
-              class="kbd w-24 text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              class="kbd w-24 text-base md:text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
             >
               F4
             </button>
           </div>
           <div class="flex gap-1 my-1 w-full">
             <kbd
-              class="text-xl hidden lg:block px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              class="text-base md:text-xl hidden lg:block px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
               >G</kbd
             >
             <button
-              class="kbd w-24 text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              class="kbd w-24 text-base md:text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
             >
               G1
             </button>
             <button
-              class="kbd w-24 text-xl px-9 py-3 mx-1 sm:mx-5 my-2 mr-6 border-none"
+              class="kbd w-24 text-base md:text-xl px-9 py-3 mx-1 sm:mx-5 my-2 mr-6 border-none"
             >
               G2
             </button>
             <button
-              class="kbd w-24 text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              class="kbd w-24 text-base md:text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
             >
               G3
             </button>
             <button
-              class="kbd w-24 text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              class="kbd w-24 text-base md:text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
             >
               G4
             </button>
           </div>
           <div class="flex gap-1 my-1 w-full">
             <kbd
-              class="text-xl hidden lg:block px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              class="text-base md:text-xl hidden lg:block px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
               >H</kbd
             >
             <button
-              class="kbd w-24 text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              class="kbd w-24 text-base md:text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
             >
               H1
             </button>
             <button
-              class="kbd w-24 text-xl px-9 py-3 mx-1 sm:mx-5 my-2 mr-6 border-none"
+              class="kbd w-24 text-base md:text-xl px-9 py-3 mx-1 sm:mx-5 my-2 mr-6 border-none"
             >
               H2
             </button>
             <button
-              class="kbd w-24 text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              class="kbd w-24 text-base md:text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
             >
               H3
             </button>
             <button
-              class="kbd w-24 text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              class="kbd w-24 text-base md:text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
             >
               H4
             </button>
           </div>
           <div class="flex gap-1 my-1 w-full">
             <kbd
-              class="text-xl hidden lg:block px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              class="text-base md:text-xl hidden lg:block px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
               >I</kbd
             >
             <button
-              class="kbd w-24 text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              class="kbd w-24 text-base md:text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
             >
               I1
             </button>
             <button
-              class="kbd w-24 text-xl px-9 py-3 mx-1 sm:mx-5 my-2 mr-6 border-none"
+              class="kbd w-24 text-base md:text-xl px-9 py-3 mx-1 sm:mx-5 my-2 mr-6 border-none"
             >
               I2
             </button>
             <button
-              class="kbd w-24 text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              class="kbd w-24 text-base md:text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
             >
               I3
             </button>
             <button
-              class="kbd w-24 text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              class="kbd w-24 text-base md:text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
             >
               I4
             </button>
           </div>
           <div class="flex gap-1 my-1 w-full">
             <kbd
-              class="text-xl hidden lg:block px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              class="text-base md:text-xl hidden lg:block px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
               >J</kbd
             >
             <button
-              class="kbd w-24 text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              class="kbd w-24 text-base md:text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
             >
               J1
             </button>
             <button
-              class="kbd w-24 text-xl px-9 py-3 mx-1 sm:mx-5 my-2 mr-6 border-none"
+              class="kbd w-24 text-base md:text-xl px-9 py-3 mx-1 sm:mx-5 my-2 mr-6 border-none"
             >
               J2
             </button>
             <button
-              class="kbd w-24 text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              class="kbd w-24 text-base md:text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
             >
               J3
             </button>
             <button
-              class="kbd w-24 text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
+              class="kbd w-24 text-base md:text-xl px-9 py-3 mx-1 sm:mx-5 my-2 border-none"
             >
               J4
             </button>
@@ -554,7 +601,7 @@
           <h1 class="text-2xl font-semibold pb-6">Select Your Seat</h1>
           <hr />
           <div class="bg-[#F7F8F8] rounded-xl p-9 mt-4">
-            <div class="flex gap-24 justify-between pb-4">
+            <div class="flex gap-6 md:gap-24 justify-between pb-4">
               <div class="">
                 <div class="text-xl font-medium">
                   Seat
@@ -648,7 +695,7 @@
         </div>
       </div>
     </div>
-
+    <!-- footer section -->
     <footer class="bg-[#030712] text-white">
       <div class="max-w-7xl mx-auto py-28">
         <div

@@ -22,7 +22,7 @@ for (const seat of allSeat) {
     let seatSpan = document.getElementById("seat-span");
     seatSpan.innerText = incrementSeatNum;
     incrementSeatNum++;
-    console.log(seatSpan.innerText);
+    // console.log(seatSpan.innerText);
 
     //   Decrement seat left number**********
     let seatsLeft = document.getElementById("seats-left");
@@ -71,36 +71,69 @@ for (const seat of allSeat) {
           alert("Please Enter your Phone Number");
         }
       });
-
-    // get discount by enter coupon code
-    document.getElementById("apply-btn").addEventListener("click", function () {
-      let couponInput = document.getElementById("coupon-input");
-      let couponInputValue = couponInput.value;
-      let couponCode = couponInputValue.split(" ").join("").toUpperCase();
-
-      let seatNum = [];
-      seatNum.push(seatSpan.innerText);
-      console.log(seatNum);
-      if (seatSpan.innerText >= 4) {
-        if (couponCode == "NEW15") {
-          // console.log("you got 15% discount");
-          let totalPriceDiv = document.getElementById("total-price-div");
-          let totalPriceAmount = document.getElementById("total-price-amount");
-          console.log(totalPriceDiv);
-          console.log(totalPriceAmount);
-          let p = document.createElement("p");
-          let discount = "Discount";
-          p.innerText = discount;
-          totalPrice.appendChild(p);
-        } else {
-          console.log("no discount");
-        }
-      } else {
-        console.log("Please Buy four seats");
-      }
-    });
   });
 }
+
+// get discount by enter coupon code
+document.getElementById("apply-btn").addEventListener("click", function () {
+  let couponInput = document.getElementById("coupon-input");
+  let couponInputValue = couponInput.value;
+  let couponCode = couponInputValue;
+  console.log(incrementSeatNum);
+  if (incrementSeatNum === 5) {
+    if (couponCode == "NEW15") {
+      let totalPriceDiv = document.getElementById("total-price-div");
+      let totalPriceAmount = document.getElementById("total-price-amount");
+      let p = document.createElement("p");
+      let p1 = document.createElement("p1");
+      let discountText = "Discount";
+      // NEW15% discount*********
+      p1.innerText = discountText;
+      let discount15 = (sumTicketPrice * 15) / 100;
+      let afterDiscountPrice = sumTicketPrice - discount15;
+      console.log(afterDiscountPrice);
+      p.innerText = "BDT " + discount15;
+      totalPriceAmount.appendChild(p);
+      totalPriceDiv.appendChild(p1);
+
+      // The input field will be hidden when the discount is applied *******
+      let applyBtn = document.getElementById("apply-btn");
+      applyBtn.classList.add("hidden");
+      let couponInput = document.getElementById("coupon-input");
+      couponInput.classList.add("hidden");
+
+      let grandTotal = document.getElementById("grand-total");
+      grandTotal.innerText = afterDiscountPrice;
+    } else if (couponCode == "Couple 20") {
+      let totalPriceDiv = document.getElementById("total-price-div");
+      let totalPriceAmount = document.getElementById("total-price-amount");
+      let p = document.createElement("p");
+      let p1 = document.createElement("p1");
+      let discountText = "Discount";
+      //  Couple 20% discount*********
+      p1.innerText = discountText;
+      let discount20 = (sumTicketPrice * 20) / 100;
+      let afterDiscountPrice = sumTicketPrice - discount20;
+      console.log(afterDiscountPrice);
+      p.innerText = "BDT " + discount20;
+      totalPriceAmount.appendChild(p);
+      totalPriceDiv.appendChild(p1);
+
+      let grandTotal = document.getElementById("grand-total");
+      grandTotal.innerText = afterDiscountPrice;
+
+      // The input field will be hidden when the discount is applied *******
+      let applyBtn = document.getElementById("apply-btn");
+      applyBtn.classList.add("hidden");
+      let couponInput = document.getElementById("coupon-input");
+      couponInput.classList.add("hidden");
+    } else {
+      alert("Invalid Coupon");
+    }
+  } else {
+    alert("Please Buy four seats");
+  }
+});
 
 //  click only 4 buttons, after clicking 4 buttons other buttons will be disabled ***
 function handleButtonClick(seats) {
